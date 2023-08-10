@@ -1,13 +1,15 @@
 
 // import './App.css';
 
+import Carousel from "./carousel";
+
 function Home() {
   return (
     <div className="h-full flex flex-col w-full bg-red-500">
     <div className="font-bold text-center">
       Housing Horizon
-    <div>
-      Carasol
+    <div className="">
+      <Carousel/>
     </div>
       <div className="text-center justify-center m-5 mx-20">
         Real Estate Price Predictor

@@ -12,12 +12,12 @@ function Input() {
             Predict the Price!
           </div>
           <div className="flex h-80">
-          <div className="grid grid-cols-1 gap-3 w-1/2 p-3">
+          <div className="grid grid-cols-2 gap-2 w-1/2 items-center">
             <label>Area<input type="text"></input></label>
             <label>Area<input type="text"></input></label>
             <label>Area<input type="text"></input></label>
           </div>
-            <div className="flex justify-center text-center">
+            <div className="flex w-1/2 justify-center text-center items-center">
                 Output
             </div>
           </div>
