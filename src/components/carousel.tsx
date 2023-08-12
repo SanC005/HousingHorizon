@@ -19,11 +19,10 @@ function Carousel() {
     const len = images.length
     const [imageno,setImageno] = useState(0)
   return (
-    <div className=' bg-blue-500'>
-        <div className='flex flex-col justify-center cursor-pointer' onClick={() => rotate()}>
-            <img className="px-16" src={images[imageno]?.link} alt={images[imageno]?.alt}></img>
+    <div className='bg-blue-500 h-screen'>
+        <div className='flex flex-col justify-center cursor-pointer h-full' onClick={() => rotate()}>
+            <img className="px-16 h-5/6 object-fit" src={images[imageno]?.link} alt={images[imageno]?.alt}></img>
             <div className='bg-slate-50 text-slate-700 font-serif h-1/6'>text</div>
-
         </div>
 </div>
   )
