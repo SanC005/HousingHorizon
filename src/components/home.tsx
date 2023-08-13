@@ -5,9 +5,8 @@ import Carousel from "./carousel";
 
 function Home() {
   return (
-    <div className="h-full flex flex-col w-full bg-red-500">
+    <div className="h-full flex flex-col w-full">
     <div className="font-bold text-center">
-      Housing Horizon
     <div className="">
       <Carousel/>
     </div>
