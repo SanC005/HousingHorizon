@@ -1,4 +1,4 @@
-import { Circle, CircleOutlined } from '@mui/icons-material'
+
 import React from 'react'
 
 export default function Navdots({id,cur_id}) {

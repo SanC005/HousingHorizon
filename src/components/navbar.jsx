@@ -1,14 +1,12 @@
 "use client";
 import NavItem from "./navitem";
-import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 // import Link from "next/link";
 const MENU_LIST = [
   { text: "Home", href: "/" },
-  { text: "Public", href: "/public" },
-  { text: "Private", href: "/private" },
-  { text: "Profile", href: "/profile" },
-  { text: "Login", href: "/login" },
+  { text: "About", href: "#" },
+  { text: "Estimate", href: "#" },
+  { text: "Contact", href: "#" },
 ];
 const Navbar = () => {
   return (
