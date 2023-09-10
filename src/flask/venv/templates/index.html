@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HOUSING HORIZON</h1>
+    <form action="{{url_for('predict')}}" method="POST">
+        <div>
+            <label for="location">
+                Location
+            </label><br/>
+            <!-- <input type="text" id="location" name="location" required value="1st Phase JP Nagar"> -->
+            <!-- let optionItems = obj.array.map((item) =>
+        <option key={item}>{item}</option>
+    ); -->
+            <select id="location" name="location" required >
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+        </div>
+        <div>
+            <label for="sqft">
+                Square feet
+            </label><br/>
+            <input type="text" id="sqft" name="sqft" required value="1000">
+        </div>
+        <div>
+            <label for="bhk">
+                BHK
+            </label><br/>
+            <input type="text" id="bhk" name="bhk" required value="3">
+        </div>
+        <div>
+            <label for="bath">
+                Number Of Bathrooms
+            </label><br/>
+            <input type="text" id="bath" name="bath" required value="3">
+        </div>
+        <button type="submit">Predict</button>
+    </form>
+    <div>
+        {{prediction_text}}
+    </div>
+</body>
+</html>
