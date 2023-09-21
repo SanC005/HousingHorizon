@@ -9,7 +9,7 @@ function Input() {
   const getData = (e) => {
     e.preventDefault();
     console.log("fetching...")
-    fetch("http://127.0.0.1:5000/test").then((res) =>
+    fetch("http://127.0.0.1:5000/predict").then((res) =>
             console.log(JSON.stringify(res))
         );
   }
